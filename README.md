@@ -31,5 +31,10 @@ O jogo foi apresentado como TRM (Trabalho de Representação Mensal) do 1º Per�
 
 ## Este jogo funciona com [Visualg3.0](http://visualg3.com.br/), baixe a última versão [aqui](https://github.com/renanfamous/Holandes-Voador_Portugol/releases).
 
+### Vídeo do jogo
+><a href="http://www.youtube.com/watch?feature=player_embedded&v=yhL-HBzAtNQ
+" target="_blank"><img src="http://img.youtube.com/vi/yhL-HBzAtNQ/0.jpg" 
+alt="Holandes Voador HD" width="480" height="360" border="10" /></a>
+
 **Referência:**
 > Este jogo foi desenvolvido com base no jogo feito por Andrey(andreywis@gmail.com) [anexado](https://github.com/renanfamous/Holandes-Voador_Portugol/blob/master/JOGOVELHA.alg) à esse repositório.
