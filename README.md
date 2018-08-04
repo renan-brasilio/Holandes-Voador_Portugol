@@ -29,7 +29,7 @@ Com intuito de ser simples e dar a opção de dois jogadores se divertirem, o jo
 
 O jogo foi apresentado como TRM (Trabalho de Representação Mensal) do 1º Período do curso de Sistemas de Informação da Faculdade Spei.
 
-## Este jogo funciona com [Visualg3.0](http://visualg3.com.br/), baixe a última versão [aqui](https://github.com/renanfamous/Holandes-Voador_Portugol/releases).
+## Este jogo funciona com [Visualg3.0](http://visualg3.com.br/), baixe a última versão do jogo [aqui](https://github.com/renanfamous/Holandes-Voador_Portugol/releases).
 
 ### Vídeo do jogo
 ><a href="http://www.youtube.com/watch?feature=player_embedded&v=yhL-HBzAtNQ
