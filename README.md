@@ -1,5 +1,5 @@
 # Holandes Voador 
-###### Jogo da velha desenvolvido em Portugol
+###### Batalha naval desenvolvido em Portugol
 ```
                                                               787                                        7249000957                      
                                                             788 882                                    08888800088887                    
