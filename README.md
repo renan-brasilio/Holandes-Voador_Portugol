@@ -25,7 +25,7 @@
          184      288887     707   48  17        288887     487      7                             78887             8888                        
 ```  
 
-Com intuito de ser simples e dar a opção de dois jogadores se divertirem, o jogo foi um grande desafio, dado o pouco conhecimento e experiência em desenvolvimento, curto tempo para desenvolvimento e limitações do Portugol.
+Com intuito de ser simples e dar a opção de dois jogadores se divertirem, o jogo foi um grande desafio, dado o pouco conhecimento e experiência em desenvolvimento, curto tempo e limitações do Portugol.
 
 O jogo foi apresentado como TRM (Trabalho de Representação Mensal) do 1º Período do curso de Sistemas de Informação da Faculdade Spei.
 
