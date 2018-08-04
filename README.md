@@ -32,4 +32,4 @@ O jogo foi apresentado como TRM (Trabalho de Representação Mensal) do 1º Per�
 ## Este jogo funciona com [Visualg3.0](http://visualg3.com.br/)
 
 **Referência:**
-> Este jogo foi desenvolvido com base no jogo feito por Andrey (andreywis@gmail.com) anexado à esse repositório.
+> Este jogo foi desenvolvido com base no jogo feito por [Andrey](andreywis@gmail.com) anexado à esse repositório.
