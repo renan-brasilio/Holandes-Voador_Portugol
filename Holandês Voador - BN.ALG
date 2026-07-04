@@ -1,14 +1,14 @@
-algoritmo "Holândes Voador - BN"
+algoritmo "HolÃ¢ndes Voador - BN"
 
-// Disciplina     : [Lógica de Programação e Algorítmos]
+// Disciplina     : [LÃ³gica de ProgramaÃ§Ã£o e AlgorÃ­tmos]
 // Professor      : Edson Pedro Ferlin
-// Função         : Simula um jogo de Batalha Naval
-// Autores        : Brenda Lee, Caroline Gonçalvez e Renan Rocha
-// Data de inínio : 01/04/2017
-// Data de término:
+// FunÃ§Ã£o         : Simula um jogo de Batalha Naval
+// Autores        : Brenda Lee, Caroline GonÃ§alvez e Renan Rocha
+// Data de inÃ­nio : 01/04/2017
+// Data de tÃ©rmino:
 
 //------------------------------------------------------------------
-//                         VARIÁVEIS
+//                         VARIÃVEIS
 //------------------------------------------------------------------
 
 var
@@ -23,7 +23,7 @@ var
    resp, enter, line_none, line_full, topo, player1, player2, novamente, auto: caractere
 
 //------------------------------------------------------------------
-//                      Fim (VARIÁVEIS)
+//                      Fim (VARIÃVEIS)
 //------------------------------------------------------------------
 
 
@@ -31,7 +31,7 @@ var
 //                       PROCEDIMENTOS
 //------------------------------------------------------------------
 
-//--------- Procedimento para o campo somente do 1º jogador --------
+//--------- Procedimento para o campo somente do 1Âº jogador --------
 PROCEDIMENTO campo1()
 
 INICIO
@@ -55,7 +55,7 @@ FIMPROCEDIMENTO
 
 //------------------------ Fim -------------------------------------
 
-//--------- Procedimento para o campo somente do 2º jogador --------
+//--------- Procedimento para o campo somente do 2Âº jogador --------
 PROCEDIMENTO campo2()
 
 INICIO
@@ -102,7 +102,7 @@ FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
 //- Procedimento contendo os dois campos com a seta indicativa para
-//------------- o 1º jogador (cordenadas) --------------------------
+//------------- o 1Âº jogador (cordenadas) --------------------------
 PROCEDIMENTO campo_p1()
 
 INICIO
@@ -131,7 +131,7 @@ FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
 //- Procedimento contendo os dois campos com a seta indicativa para
-//------------- o 2º jogador (cordenadas) --------------------------
+//------------- o 2Âº jogador (cordenadas) --------------------------
 PROCEDIMENTO campo_p2()
 
 INICIO
@@ -160,7 +160,7 @@ FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
 //- Procedimento contendo os dois campos com a seta indicativa para
-//---------------- o 1º jogador (tiro) -----------------------------
+//---------------- o 1Âº jogador (tiro) -----------------------------
 PROCEDIMENTO campo_tiro_p1()
 
 INICIO
@@ -189,7 +189,7 @@ FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
 //- Procedimento contendo os dois campos com a seta indicativa para
-//---------------- o 2º jogador (tiro) -----------------------------
+//---------------- o 2Âº jogador (tiro) -----------------------------
 PROCEDIMENTO campo_tiro_p2()
 
 INICIO
@@ -217,7 +217,7 @@ INICIO
 FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
-//-- Procedimento contendo a entrada de cordenadas do 1º jogador ---
+//-- Procedimento contendo a entrada de cordenadas do 1Âº jogador ---
 PROCEDIMENTO ent_cord_p1()
 INICIO
    // Entrada de posicionamento
@@ -231,7 +231,7 @@ INICIO
          campo_p1()
          ESCREVAL
          ESCREVAL
-         ESCREVAL ("      ",player1,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+         ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
          ESCREVAL
          ESCREVAL
          ESCREVAL (line_full)
@@ -242,7 +242,7 @@ INICIO
          ESCREVA  ("             Posicionamento (1 = Horizontal | 2 = Vertical): ")
          LEIA (dir)
       ATE (dir = 1) OU (dir = 2)
-   FIMSE // Fim da verificação
+   FIMSE // Fim da verificaÃ§Ã£o
 
    // Entrada de linha
    ESCREVA ("             Linha: ")
@@ -256,12 +256,12 @@ INICIO
          campo_p1()
          ESCREVAL
          ESCREVAL
-         ESCREVAL ("      ",player1,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+         ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
          ESCREVAL
          ESCREVAL
          ESCREVAL (line_full)
          ESCREVAL
-         ESCREVA  ("                                                         -Erro: Digite o número da Linha de 1 a 10!-")
+         ESCREVA  ("                                                         -Erro: Digite o nÃºmero da Linha de 1 a 10!-")
          ESCREVAL
          ESCREVAL
          ESCREVA  ("             Posicionamento (1 = Horizontal | 2 = Vertical): ",dir)
@@ -283,12 +283,12 @@ INICIO
          campo_p1()
          ESCREVAL
          ESCREVAL
-         ESCREVAL ("      ",player1,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+         ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
          ESCREVAL
          ESCREVAL
          ESCREVAL (line_full)
          ESCREVAL
-         ESCREVA  ("                                                         -Erro: Digite o número da Coluna de 1 a 10!-")
+         ESCREVA  ("                                                         -Erro: Digite o nÃºmero da Coluna de 1 a 10!-")
          ESCREVAL
          ESCREVAL
          ESCREVA  ("             Posicionamento (1 = Horizontal | 2 = Vertical): ",dir)
@@ -302,7 +302,7 @@ INICIO
 FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
-//-- Procedimento de barcos com somente uma posição, 1º jogador ----
+//-- Procedimento de barcos com somente uma posiÃ§Ã£o, 1Âº jogador ----
 PROCEDIMENTO ent_cord2_p1()
 INICIO
 
@@ -318,12 +318,12 @@ INICIO
          campo_p1()
          ESCREVAL
          ESCREVAL
-         ESCREVAL ("      ",player1,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+         ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
          ESCREVAL
          ESCREVAL
          ESCREVAL (line_full)
          ESCREVAL
-         ESCREVA  ("                                                         -Erro: Digite o número da Linha DE 1 a 10!-")
+         ESCREVA  ("                                                         -Erro: Digite o nÃºmero da Linha DE 1 a 10!-")
          ESCREVAL
          ESCREVAL
          ESCREVA  ("             Posicionamento (1 = Horizontal | 2 = Vertical): ",dir)
@@ -345,12 +345,12 @@ INICIO
          campo_p1()
          ESCREVAL
          ESCREVAL
-         ESCREVAL("      ",player1,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+         ESCREVAL("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
          ESCREVAL
          ESCREVAL
          ESCREVAL(line_full)
          ESCREVAL
-         ESCREVA ("                                                         -Erro: Digite o número da Coluna de 1 a 10!-")
+         ESCREVA ("                                                         -Erro: Digite o nÃºmero da Coluna de 1 a 10!-")
          ESCREVAL
          ESCREVAL
          ESCREVA ("             Posicionamento (1 = Horizontal | 2 = Vertical): ",dir)
@@ -366,7 +366,7 @@ FIMPROCEDIMENTO
 
 PROCEDIMENTO ent_cord_p2()
 INICIO
-   // 2.1.Entrada das coordenadas de posicionamento do 1º jogador
+   // 2.1.Entrada das coordenadas de posicionamento do 1Âº jogador
    ESCREVA ("             Posicionamento (1 = Horizontal | 2 = Vertical): ")
    LEIA (dir)
    // 2.2.Verifica SE 1 OU 2 foram digitados
@@ -377,7 +377,7 @@ INICIO
          campo_p2()
          ESCREVAL
          ESCREVAL
-         ESCREVAL ("      ",player2,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+         ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
          ESCREVAL
          ESCREVAL
          ESCREVAL (line_full)
@@ -390,7 +390,7 @@ INICIO
       ATE (dir = 1) OU (dir = 2)
    FIMSE // 2.2.Fim
 
-   // 2.3.Entrada das coordenadas DE linha do 1º jogador
+   // 2.3.Entrada das coordenadas DE linha do 1Âº jogador
    ESCREVA ("             Linha: ")
    LEIA (linha)
 
@@ -402,12 +402,12 @@ INICIO
          campo_p2()
          ESCREVAL
          ESCREVAL
-         ESCREVAL ("      ",player2,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+         ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
          ESCREVAL
          ESCREVAL
          ESCREVAL (line_full)
          ESCREVAL
-         ESCREVA  ("                                                         -Erro: Digite o número da Linha de 1 a 10!-")
+         ESCREVA  ("                                                         -Erro: Digite o nÃºmero da Linha de 1 a 10!-")
          ESCREVAL
          ESCREVAL
          ESCREVA  ("             Posicionamento (1 = Horizontal | 2 = Vertical): ",dir)
@@ -417,7 +417,7 @@ INICIO
       ATE ((linha >= 1) E (linha < 11)) OU (linha <> 0)
    FIMSE // 2.4.Fim
 
-   // 2.5.Entrada das coordenadas DE coluna do 1º jogador
+   // 2.5.Entrada das coordenadas DE coluna do 1Âº jogador
    ESCREVA ("             Coluna: ")
    LEIA (coluna)
 
@@ -429,12 +429,12 @@ INICIO
          campo_p2()
          ESCREVAL
          ESCREVAL
-         ESCREVAL ("      ",player2,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+         ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
          ESCREVAL
          ESCREVAL
          ESCREVAL (line_full)
          ESCREVAL
-         ESCREVA  ("                                                         -Erro: Digite o número da Coluna de 1 a 10!-")
+         ESCREVA  ("                                                         -Erro: Digite o nÃºmero da Coluna de 1 a 10!-")
          ESCREVAL
          ESCREVAL
          ESCREVA  ("             Posicionamento (1 = Horizontal | 2 = Vertical): ",dir)
@@ -447,11 +447,11 @@ INICIO
    FIMSE // 2.6.Fim
 FIMPROCEDIMENTO
 
-// 3.PROCEDIMENTO Barcos com somente uma posição, 1º jogador
+// 3.PROCEDIMENTO Barcos com somente uma posiÃ§Ã£o, 1Âº jogador
 PROCEDIMENTO ent_cord2_p2()
 INICIO
 
-   // 3.1.Entrada das coordenadas de linha do 1º jogador
+   // 3.1.Entrada das coordenadas de linha do 1Âº jogador
    ESCREVA ("             Linha: ")
    LEIA (linha)
 
@@ -463,12 +463,12 @@ INICIO
          campo_p2()
          ESCREVAL
          ESCREVAL
-         ESCREVAL ("      ",player2,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+         ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
          ESCREVAL
          ESCREVAL
          ESCREVAL (line_full)
          ESCREVAL
-         ESCREVA  ("                                                         -Erro: Digite o número da Linha de 1 a 10!-")
+         ESCREVA  ("                                                         -Erro: Digite o nÃºmero da Linha de 1 a 10!-")
          ESCREVAL
          ESCREVAL
          ESCREVA  ("             Posicionamento (1 = Horizontal | 2 = Vertical): ",dir)
@@ -478,7 +478,7 @@ INICIO
       ATE ((linha >= 1) E (linha < 11)) OU (linha <> 0)
    FIMSE // 3.2.Fim
 
-   // 3.3.Entrada das coordenadas DE coluna do 1º jogador
+   // 3.3.Entrada das coordenadas DE coluna do 1Âº jogador
    ESCREVA ("             Coluna: ")
    LEIA (coluna)
 
@@ -490,12 +490,12 @@ INICIO
          campo_p2()
          ESCREVAL
          ESCREVAL
-         ESCREVAL("      ",player2,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+         ESCREVAL("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
          ESCREVAL
          ESCREVAL
          ESCREVAL(line_full)
          ESCREVAL
-         ESCREVA ("                                                         -Erro: Digite o número da Coluna de 1 a 10!-")
+         ESCREVA ("                                                         -Erro: Digite o nÃºmero da Coluna de 1 a 10!-")
          ESCREVAL
          ESCREVAL
          ESCREVA ("             Posicionamento (1 = Horizontal | 2 = Vertical): ",dir)
@@ -519,7 +519,7 @@ INICIO
 
 FIMPROCEDIMENTO
 
-// 3.PROCEDIMENTO Barcos com somente uma posição, 1º jogador
+// 3.PROCEDIMENTO Barcos com somente uma posiÃ§Ã£o, 1Âº jogador
 PROCEDIMENTO ent_cord2_p1Auto()
 INICIO
    ALEATORIO ON
@@ -564,7 +564,7 @@ INICIO
 FIMPROCEDIMENTO
 
 
-// 4.Tela com informações DE Tutorial
+// 4.Tela com informaÃ§Ãµes DE Tutorial
 PROCEDIMENTO tutorial()
 
 INICIO
@@ -577,16 +577,16 @@ INICIO
    ESCREVAL("                                          TUTORIAL                                                \/              __'__     __'__      __'__        _  _")
    ESCREVAL("                                                                                                                 /    /    /    /     /    /       ' \/ '")
    ESCREVAL("                                                                                                                /\____\    \____\     \____\")
-   ESCREVAL("          Holandês Voador é um jogo DE Batalha Naval e lhe colocará em uma guerra em                           / ___!___   ___!___    ___!___")
-   ESCREVAL("          que cada jogador terá seus barcos pirata. O objetivo é destruir os piratas                          / (      (  (      (   (      (")
-   ESCREVAL("          inimigos e garantir seu tesouro! Mas antes disso, é preciso encontrá-los.                        / /   \______\  \______\   \______\")
-   ESCREVAL("          Ganhará quem destruir todos os barcos piratas inimigos primeiro. No início                     /  /   ____!_____ ___!______ ____!_____        _  _")
-   ESCREVAL("          do jogo é necessário alocar os 10 barcos, com diferentes tamanhos e bolar                    /   /   /          /          /         /         \/")
-   ESCREVAL("          uma estratégia, lembre-se bem das posições pois após você terminar, será a                 /    /    |         ||         ||         |")
-   ESCREVAL("          vez de seu adversário. Após os barcos alocados, será a hora da batalha, ca-              /_____/     \         \\         \\         \")
-   ESCREVAL("          da um terá uma chance, se acertar pode continuar, se errar é a vez do ad-                      \      \_________\\_________\\_________\")
-   ESCREVAL("          versário. Os barcos são representados com #, ao acertá-lo, o mesmo ficará                       \         |          |         |")
-   ESCREVAL("          com um 'X' no local DE acerto. Crie sua estratégia e parta para a batalha!                       \________!__________!_________!_________/")
+   ESCREVAL("          HolandÃªs Voador Ã© um jogo DE Batalha Naval e lhe colocarÃ¡ em uma guerra em                           / ___!___   ___!___    ___!___")
+   ESCREVAL("          que cada jogador terÃ¡ seus barcos pirata. O objetivo Ã© destruir os piratas                          / (      (  (      (   (      (")
+   ESCREVAL("          inimigos e garantir seu tesouro! Mas antes disso, Ã© preciso encontrÃ¡-los.                        / /   \______\  \______\   \______\")
+   ESCREVAL("          GanharÃ¡ quem destruir todos os barcos piratas inimigos primeiro. No inÃ­cio                     /  /   ____!_____ ___!______ ____!_____        _  _")
+   ESCREVAL("          do jogo Ã© necessÃ¡rio alocar os 10 barcos, com diferentes tamanhos e bolar                    /   /   /          /          /         /         \/")
+   ESCREVAL("          uma estratÃ©gia, lembre-se bem das posiÃ§Ãµes pois apÃ³s vocÃª terminar, serÃ¡ a                 /    /    |         ||         ||         |")
+   ESCREVAL("          vez de seu adversÃ¡rio. ApÃ³s os barcos alocados, serÃ¡ a hora da batalha, ca-              /_____/     \         \\         \\         \")
+   ESCREVAL("          da um terÃ¡ uma chance, se acertar pode continuar, se errar Ã© a vez do ad-                      \      \_________\\_________\\_________\")
+   ESCREVAL("          versÃ¡rio. Os barcos sÃ£o representados com #, ao acertÃ¡-lo, o mesmo ficarÃ¡                       \         |          |         |")
+   ESCREVAL("          com um 'X' no local DE acerto. Crie sua estratÃ©gia e parta para a batalha!                       \________!__________!_________!_________/")
    ESCREVAL("                                                                                                            \|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|/ ")
    ESCREVAL("                                                                                                             \        o       o        o         /  ")
    ESCREVAL("                                    Divirta-se e bom jogo!                                      ~~~~~~~~~~~~~~\_________________________________/~~~~~~~~~~~~~")
@@ -696,7 +696,7 @@ FIMPROCEDIMENTO
 //------------------------------------------------------------------
 
 INICIO
-   // 5.Linha completa PARA dar formato ao cabeçalho E rodapés das telas
+   // 5.Linha completa PARA dar formato ao cabeÃ§alho E rodapÃ©s das telas
    line_full <- "      _________________________________________________________________________________________________________________________________________________________")
 
    // 6.Tela inicial
@@ -734,10 +734,10 @@ INICIO
    LEIA (enter)
    LIMPATELA // 6.Fim
 
-   // 7.Declaração do topo que SErá utilizado nas telas
-   topo <- "                                                                           O Holandês Voador"
+   // 7.DeclaraÃ§Ã£o do topo que SErÃ¡ utilizado nas telas
+   topo <- "                                                                           O HolandÃªs Voador"
 
-   // 8.Verifica se o jogador quer ver as instruções antes DE jogar
+   // 8.Verifica se o jogador quer ver as instruÃ§Ãµes antes DE jogar
    ENQUANTO ((resp <> "s") OU (resp <> "S")) E ((resp <> "n") OU (resp <> "N")) FACA
       LIMPATELA
       ESCREVAL (line_full)
@@ -768,13 +768,13 @@ INICIO
       ESCREVAL
       ESCREVAL (line_full)
       ESCREVAL
-      ESCREVAL("                                                             Gostaria de ver as instruções antes de iniciar?")
+      ESCREVAL("                                                             Gostaria de ver as instruÃ§Ãµes antes de iniciar?")
       ESCREVAL("                                                                                  <S/N>")
       LEIA (resp)
       LIMPATELA
    FIMENQUANTO // 8.Fim
 
-   // 9.Mostra o tutorial caso o jogador queira vê-lo E coleta o nome dos jogadores
+   // 9.Mostra o tutorial caso o jogador queira vÃª-lo E coleta o nome dos jogadores
    SE (resp = "s") OU (resp = "S") ENTAO
       ESCREVAL (line_full)
       tutorial()
@@ -784,7 +784,7 @@ INICIO
       ESCREVA ("       Entre com o nome do primeiro jogador e aperte Enter: ")
       LEIA (player1)
 
-      // 9.1.Verifica se o nome não está vazio
+      // 9.1.Verifica se o nome nÃ£o estÃ¡ vazio
       SE (player1 = "") ENTAO
          REPITA
             LIMPATELA
@@ -792,7 +792,7 @@ INICIO
             tutorial()
             ESCREVAL (line_full)
             ESCREVAL
-            ESCREVAL ("                                                         -Erro: Você não digitou o nome do primeiro jogador!-")
+            ESCREVAL ("                                                         -Erro: VocÃª nÃ£o digitou o nome do primeiro jogador!-")
             ESCREVAL
             ESCREVA ("       Entre com o nome do primeiro jogador e aperte Enter: ")
             LEIA (player1)
@@ -829,7 +829,7 @@ INICIO
                   tutorial()
                   ESCREVAL (line_full)
                   ESCREVAL
-                  ESCREVAL ("                                                         -Erro: Você não digitou o nome do segundo jogador!-")
+                  ESCREVAL ("                                                         -Erro: VocÃª nÃ£o digitou o nome do segundo jogador!-")
                   ESCREVAL
                   ESCREVA  ("       Entre com o nome do segundo jogador e aperte Enter: ")
                   LEIA (player2)
@@ -867,7 +867,7 @@ INICIO
                barcop1()
                ESCREVAL (line_full)
                ESCREVAL
-               ESCREVAL ("                                                         -Erro: Você não digitou o nome do primeiro jogador!-")
+               ESCREVAL ("                                                         -Erro: VocÃª nÃ£o digitou o nome do primeiro jogador!-")
                ESCREVAL
                ESCREVA  ("       Entre com o nome do primeiro jogador e aperte Enter: ")
                LEIA (player1)
@@ -904,7 +904,7 @@ INICIO
                      barcop2()
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                                         -Erro: Você não digitou o nome do segundo jogador!-")
+                     ESCREVAL ("                                                         -Erro: VocÃª nÃ£o digitou o nome do segundo jogador!-")
                      ESCREVAL
                      ESCREVA ("       Entre com o nome do segundo jogador e aperte Enter: ")
                      LEIA (player2)
@@ -934,19 +934,19 @@ INICIO
          FIMPARA
       FIMPARA
 
-      // Inínio do jogo
+      // InÃ­nio do jogo
       // Player 1
       LIMPATELA
       ESCREVAL (line_full)
       campo_p1()
       ESCREVAL
       ESCREVAL
-      ESCREVAL ("       ",player1,", é chegado o momento...")
+      ESCREVAL ("       ",player1,", Ã© chegado o momento...")
       ESCREVAL
       ESCREVAL
       ESCREVAL (line_full)
       ESCREVAL
-      ESCREVAL("                                                              Para começar a batalha, pressione Enter!")
+      ESCREVAL("                                                              Para comeÃ§ar a batalha, pressione Enter!")
       ESCREVAL
       LEIA (enter)
 
@@ -1243,7 +1243,7 @@ INICIO
          FIMPARA // Fim barcos SS America
 
          //##########################################################
-         //         Fim do setamento AUTOMATICO do 1º jogador
+         //         Fim do setamento AUTOMATICO do 1Âº jogador
          //##########################################################
 
          // Barcos Dimitrius (x4)
@@ -1308,7 +1308,7 @@ INICIO
             campo_p1()
             ESCREVAL
             ESCREVAL
-            ESCREVAL("      ",player1,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+            ESCREVAL("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
             ESCREVAL
             ESCREVAL
             ESCREVAL(line_full)
@@ -1324,12 +1324,12 @@ INICIO
                   campo_p1()
                   ESCREVAL
                   ESCREVAL
-                  ESCREVAL ("      ",player1,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+                  ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
                   ESCREVAL
                   ESCREVAL
                   ESCREVAL (line_full)
                   ESCREVAL
-                  ESCREVAL ("                                                         -Erro: você posicionOU o barco fora da arena, tente novamente-")
+                  ESCREVAL ("                                                         -Erro: vocÃª posicionOU o barco fora da arena, tente novamente-")
                   ESCREVAL
                   ent_cord_p1()
                   LIMPATELA
@@ -1341,12 +1341,12 @@ INICIO
                   campo_p1()
                   ESCREVAL
                   ESCREVAL
-                  ESCREVAL ("      ",player1,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+                  ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
                   ESCREVAL
                   ESCREVAL
                   ESCREVAL (line_full)
                   ESCREVAL
-                  ESCREVAL ("                                                         -Erro: você já posicionOU um barco nessa posição, tente OUtra-")
+                  ESCREVAL ("                                                         -Erro: vocÃª jÃ¡ posicionOU um barco nessa posiÃ§Ã£o, tente OUtra-")
                   ESCREVAL
                   ESCREVAL
                   ent_cord_p1()
@@ -1398,7 +1398,7 @@ INICIO
             campo_p1()
             ESCREVAL
             ESCREVAL
-            ESCREVAL ("       ",player1,", dê as coordenadas das posições dos barcos World Discoverer (x2) (Com 5 posições)...")
+            ESCREVAL ("       ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos World Discoverer (x2) (Com 5 posiÃ§Ãµes)...")
             ESCREVAL
             ESCREVAL
             ESCREVAL (line_full)
@@ -1414,12 +1414,12 @@ INICIO
                   campo_p1()
                   ESCREVAL
                   ESCREVAL
-                  ESCREVAL ("       ",player1,", dê as coordenadas das posições dos barcos World Discoverer (x2) (Com 5 posições)...")
+                  ESCREVAL ("       ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos World Discoverer (x2) (Com 5 posiÃ§Ãµes)...")
                   ESCREVAL
                   ESCREVAL
                   ESCREVAL (line_full)
                   ESCREVAL
-                  ESCREVAL ("                                                         -Erro: você posicionOU um barco fora da arena, tente novamente-")
+                  ESCREVAL ("                                                         -Erro: vocÃª posicionOU um barco fora da arena, tente novamente-")
                   ESCREVAL
                   ESCREVAL
                   ent_cord_p1()
@@ -1433,12 +1433,12 @@ INICIO
                   campo_p1()
                   ESCREVAL
                   ESCREVAL
-                  ESCREVAL ("       ",player1,", dê as coordenadas das posições dos barcos World Discoverer (x2) (Com 5 posições)...")
+                  ESCREVAL ("       ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos World Discoverer (x2) (Com 5 posiÃ§Ãµes)...")
                   ESCREVAL
                   ESCREVAL
                   ESCREVAL (line_full)
                   ESCREVAL
-                  ESCREVAL ("                                                         -Erro: você já posicionOU um barco nessa posição, tente OUtra-")
+                  ESCREVAL ("                                                         -Erro: vocÃª jÃ¡ posicionOU um barco nessa posiÃ§Ã£o, tente OUtra-")
                   ESCREVAL
                   ESCREVAL
                   ent_cord_p1()
@@ -1464,12 +1464,12 @@ INICIO
                      campo_p1()
                      ESCREVAL
                      ESCREVAL
-                     ESCREVAL ("       ",player1,", dê as coordenadas das posições dos barcos World Discoverer (x2) (Com 5 posições)...")
+                     ESCREVAL ("       ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos World Discoverer (x2) (Com 5 posiÃ§Ãµes)...")
                      ESCREVAL
                      ESCREVAL
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                           -Erro: você já posicionOU um barco em algumas das posições, tente novamente-")
+                     ESCREVAL ("                                           -Erro: vocÃª jÃ¡ posicionOU um barco em algumas das posiÃ§Ãµes, tente novamente-")
                      ESCREVAL
                      ESCREVAL
                      ent_cord_p1()
@@ -1501,12 +1501,12 @@ INICIO
                         campo_p1()
                         ESCREVAL
                         ESCREVAL
-                        ESCREVAL ("       ",player1,", dê as coordenadas das posições dos barcos World Discoverer (x2) (Com 5 posições)...")
+                        ESCREVAL ("       ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos World Discoverer (x2) (Com 5 posiÃ§Ãµes)...")
                         ESCREVAL
                         ESCREVAL
                         ESCREVAL (line_full)
                         ESCREVAL
-                        ESCREVAL ("                                           -Erro: você já posicionOU um barco em algumas das posições, tente novamente-")
+                        ESCREVAL ("                                           -Erro: vocÃª jÃ¡ posicionOU um barco em algumas das posiÃ§Ãµes, tente novamente-")
                         ESCREVAL
                         ESCREVAL
                         ent_cord_p1()
@@ -1546,7 +1546,7 @@ INICIO
             campo_p1()
             ESCREVAL
             ESCREVAL
-            ESCREVAL ("      ",player1,", dê as coordenadas das posições dos barcos SS America (x3) (Com 3 posições)...")
+            ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos SS America (x3) (Com 3 posiÃ§Ãµes)...")
             ESCREVAL
             ESCREVAL
             ESCREVAL (line_full)
@@ -1562,12 +1562,12 @@ INICIO
                   campo_p1()
                   ESCREVAL
                   ESCREVAL
-                  ESCREVAL ("      ",player1,", dê as coordenadas das posições dos barcos SS America (x3) (Com 3 posições)...")
+                  ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos SS America (x3) (Com 3 posiÃ§Ãµes)...")
                   ESCREVAL
                   ESCREVAL
                   ESCREVAL (line_full)
                   ESCREVAL
-                  ESCREVAL ("                                                         -Erro: você posicionOU um barco fora da arena, tente novamente-")
+                  ESCREVAL ("                                                         -Erro: vocÃª posicionOU um barco fora da arena, tente novamente-")
                   ESCREVAL
                   ESCREVAL
                   ent_cord_p1()
@@ -1581,12 +1581,12 @@ INICIO
                   campo_p1()
                   ESCREVAL
                   ESCREVAL
-                  ESCREVAL ("      ",player1,", dê as coordenadas das posições dos barcos SS America (x3) (Com 3 posições)...")
+                  ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos SS America (x3) (Com 3 posiÃ§Ãµes)...")
                   ESCREVAL
                   ESCREVAL
                   ESCREVAL (line_full)
                   ESCREVAL
-                  ESCREVAL ("                                                         -Erro: você já posicionOU um barco nessa posição, tente OUtra-")
+                  ESCREVAL ("                                                         -Erro: vocÃª jÃ¡ posicionOU um barco nessa posiÃ§Ã£o, tente OUtra-")
                   ESCREVAL
                   ESCREVAL
                   ent_cord_p1()
@@ -1612,12 +1612,12 @@ INICIO
                      campo_p1()
                      ESCREVAL
                      ESCREVAL
-                     ESCREVAL ("      ",player1,", dê as coordenadas das posições dos barcos SS America (x3) (Com 3 posições)...")
+                     ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos SS America (x3) (Com 3 posiÃ§Ãµes)...")
                      ESCREVAL
                      ESCREVAL
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                           -Erro: você já posicionOU um barco em algumas das posições, tente novamente-")
+                     ESCREVAL ("                                           -Erro: vocÃª jÃ¡ posicionOU um barco em algumas das posiÃ§Ãµes, tente novamente-")
                      ESCREVAL
                      ESCREVAL
                      ent_cord_p1()
@@ -1649,12 +1649,12 @@ INICIO
                         campo_p1()
                         ESCREVAL
                         ESCREVAL
-                        ESCREVAL ("      ",player1,", dê as coordenadas das posições dos barcos SS America (x3) (Com 3 posições)...")
+                        ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos SS America (x3) (Com 3 posiÃ§Ãµes)...")
                         ESCREVAL
                         ESCREVAL
                         ESCREVAL (line_full)
                         ESCREVAL
-                        ESCREVAL ("                                           -Erro: você já posicionou um barco em algumas das posições, tente novamente-")
+                        ESCREVAL ("                                           -Erro: vocÃª jÃ¡ posicionou um barco em algumas das posiÃ§Ãµes, tente novamente-")
                         ESCREVAL
                         ESCREVAL
                         ent_cord_p1()
@@ -1694,7 +1694,7 @@ INICIO
             campo_p1()
             ESCREVAL
             ESCREVAL
-            ESCREVAL ("      ",player1,", dê as coordenadas das posições dos barcos Dimitrius (x4) (Com 1 posição)...")
+            ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos Dimitrius (x4) (Com 1 posiÃ§Ã£o)...")
             ESCREVAL
             ESCREVAL
             ESCREVAL (line_full)
@@ -1710,12 +1710,12 @@ INICIO
                   campo_p1()
                   ESCREVAL
                   ESCREVAL
-                  ESCREVAL ("      ",player1,", dê as coordenadas das posições dos barcos Dimitrius (x4) (Com 1 posição)...")
+                  ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos Dimitrius (x4) (Com 1 posiÃ§Ã£o)...")
                   ESCREVAL
                   ESCREVAL
                   ESCREVAL (line_full)
                   ESCREVAL
-                  ESCREVAL ("                                                         -Erro: você posicionOU um barco fora da arena, tente novamente-")
+                  ESCREVAL ("                                                         -Erro: vocÃª posicionOU um barco fora da arena, tente novamente-")
                   ESCREVAL
                   ESCREVAL
                   ent_cord2_p1()
@@ -1728,12 +1728,12 @@ INICIO
                   campo_p1()
                   ESCREVAL
                   ESCREVAL
-                  ESCREVAL ("      ",player1,", dê as coordenadas das posições dos barcos Dimitrius (x4) (Com 1 posição)...")
+                  ESCREVAL ("      ",player1,", dÃª as coordenadas das posiÃ§Ãµes dos barcos Dimitrius (x4) (Com 1 posiÃ§Ã£o)...")
                   ESCREVAL
                   ESCREVAL
                   ESCREVAL (line_full)
                   ESCREVAL
-                  ESCREVAL ("                                                         -Erro: você já posicionOU um barco nessa posição, tente OUtra-")
+                  ESCREVAL ("                                                         -Erro: vocÃª jÃ¡ posicionOU um barco nessa posiÃ§Ã£o, tente OUtra-")
                   ESCREVAL
                   ESCREVAL
                   ent_cord2_p1()
@@ -1761,16 +1761,16 @@ INICIO
          // Fim player 1
 
          //##########################################################
-         //         Fim do setamento MANUAL do 1º jogador
+         //         Fim do setamento MANUAL do 1Âº jogador
          //##########################################################
 
-         // Início jogada Player 2
+         // InÃ­cio jogada Player 2
          LIMPATELA
          ESCREVAL (line_full)
          campo_p2()
          ESCREVAL
          ESCREVAL
-         ESCREVAL ("       ",player2,", é chegado o momento...")
+         ESCREVAL ("       ",player2,", Ã© chegado o momento...")
          ESCREVAL
          ESCREVAL
          ESCREVAL (line_full)
@@ -2133,7 +2133,7 @@ INICIO
                campo_p2()
                ESCREVAL
                ESCREVAL
-               ESCREVAL("      ",player2,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+               ESCREVAL("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
                ESCREVAL
                ESCREVAL
                ESCREVAL(line_full)
@@ -2149,12 +2149,12 @@ INICIO
                      campo_p2()
                      ESCREVAL
                      ESCREVAL
-                     ESCREVAL ("      ",player2,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+                     ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
                      ESCREVAL
                      ESCREVAL
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                                         -Erro: você posicionOU o barco fora da arena, tente novamente-")
+                     ESCREVAL ("                                                         -Erro: vocÃª posicionOU o barco fora da arena, tente novamente-")
                      ESCREVAL
                      ent_cord_p2()
                      LIMPATELA
@@ -2166,12 +2166,12 @@ INICIO
                      campo_p1()
                      ESCREVAL
                      ESCREVAL
-                     ESCREVAL ("      ",player2,", dê as coordenadas das posições do barco Octavius (Com 6 posições)...")
+                     ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes do barco Octavius (Com 6 posiÃ§Ãµes)...")
                      ESCREVAL
                      ESCREVAL
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                                         -Erro: você já posicionOU um barco nessa posição, tente OUtra-")
+                     ESCREVAL ("                                                         -Erro: vocÃª jÃ¡ posicionOU um barco nessa posiÃ§Ã£o, tente OUtra-")
                      ESCREVAL
                      ESCREVAL
                      ent_cord_p2()
@@ -2223,7 +2223,7 @@ INICIO
                campo_p2()
                ESCREVAL
                ESCREVAL
-               ESCREVAL ("       ",player2,", dê as coordenadas das posições dos barcos World Discoverer (x2) (Com 5 posições)...")
+               ESCREVAL ("       ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos World Discoverer (x2) (Com 5 posiÃ§Ãµes)...")
                ESCREVAL
                ESCREVAL
                ESCREVAL (line_full)
@@ -2239,12 +2239,12 @@ INICIO
                      campo_p2()
                      ESCREVAL
                      ESCREVAL
-                     ESCREVAL ("       ",player2,", dê as coordenadas das posições dos barcos World Discoverer (x2) (Com 5 posições)...")
+                     ESCREVAL ("       ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos World Discoverer (x2) (Com 5 posiÃ§Ãµes)...")
                      ESCREVAL
                      ESCREVAL
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                                         -Erro: você posicionOU um barco fora da arena, tente novamente-")
+                     ESCREVAL ("                                                         -Erro: vocÃª posicionOU um barco fora da arena, tente novamente-")
                      ESCREVAL
                      ESCREVAL
                      ent_cord_p2()
@@ -2258,12 +2258,12 @@ INICIO
                      campo_p2()
                      ESCREVAL
                      ESCREVAL
-                     ESCREVAL ("       ",player2,", dê as coordenadas das posições dos barcos World Discoverer (x2) (Com 5 posições)...")
+                     ESCREVAL ("       ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos World Discoverer (x2) (Com 5 posiÃ§Ãµes)...")
                      ESCREVAL
                      ESCREVAL
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                                         -Erro: você já posicionOU um barco nessa posição, tente OUtra-")
+                     ESCREVAL ("                                                         -Erro: vocÃª jÃ¡ posicionOU um barco nessa posiÃ§Ã£o, tente OUtra-")
                      ESCREVAL
                      ESCREVAL
                      ent_cord_p2()
@@ -2289,12 +2289,12 @@ INICIO
                         campo_p2()
                         ESCREVAL
                         ESCREVAL
-                        ESCREVAL ("       ",player2,", dê as coordenadas das posições dos barcos World Discoverer (x2) (Com 5 posições)...")
+                        ESCREVAL ("       ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos World Discoverer (x2) (Com 5 posiÃ§Ãµes)...")
                         ESCREVAL
                         ESCREVAL
                         ESCREVAL (line_full)
                         ESCREVAL
-                        ESCREVAL ("                                           -Erro: você já posicionOU um barco em algumas das posições, tente novamente-")
+                        ESCREVAL ("                                           -Erro: vocÃª jÃ¡ posicionOU um barco em algumas das posiÃ§Ãµes, tente novamente-")
                         ESCREVAL
                         ESCREVAL
                         ent_cord_p2()
@@ -2326,12 +2326,12 @@ INICIO
                            campo_p2()
                            ESCREVAL
                            ESCREVAL
-                           ESCREVAL ("       ",player2,", dê as coordenadas das posições dos barcos World Discoverer (x2) (Com 5 posições)...")
+                           ESCREVAL ("       ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos World Discoverer (x2) (Com 5 posiÃ§Ãµes)...")
                            ESCREVAL
                            ESCREVAL
                            ESCREVAL (line_full)
                            ESCREVAL
-                           ESCREVAL ("                                           -Erro: você já posicionOU um barco em algumas das posições, tente novamente-")
+                           ESCREVAL ("                                           -Erro: vocÃª jÃ¡ posicionOU um barco em algumas das posiÃ§Ãµes, tente novamente-")
                            ESCREVAL
                            ESCREVAL
                            ent_cord_p2()
@@ -2371,7 +2371,7 @@ INICIO
                campo_p2()
                ESCREVAL
                ESCREVAL
-               ESCREVAL ("      ",player2,", dê as coordenadas das posições dos barcos SS America (x3) (Com 3 posições)...")
+               ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos SS America (x3) (Com 3 posiÃ§Ãµes)...")
                ESCREVAL
                ESCREVAL
                ESCREVAL (line_full)
@@ -2387,12 +2387,12 @@ INICIO
                      campo_p2()
                      ESCREVAL
                      ESCREVAL
-                     ESCREVAL ("      ",player2,", dê as coordenadas das posições dos barcos SS America (x3) (Com 3 posições)...")
+                     ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos SS America (x3) (Com 3 posiÃ§Ãµes)...")
                      ESCREVAL
                      ESCREVAL
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                                         -Erro: você posicionOU um barco fora da arena, tente novamente-")
+                     ESCREVAL ("                                                         -Erro: vocÃª posicionOU um barco fora da arena, tente novamente-")
                      ESCREVAL
                      ESCREVAL
                      ent_cord_p2()
@@ -2406,12 +2406,12 @@ INICIO
                      campo_p2()
                      ESCREVAL
                      ESCREVAL
-                     ESCREVAL ("      ",player2,", dê as coordenadas das posições dos barcos SS America (x3) (Com 3 posições)...")
+                     ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos SS America (x3) (Com 3 posiÃ§Ãµes)...")
                      ESCREVAL
                      ESCREVAL
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                                         -Erro: você já posicionOU um barco nessa posição, tente OUtra-")
+                     ESCREVAL ("                                                         -Erro: vocÃª jÃ¡ posicionOU um barco nessa posiÃ§Ã£o, tente OUtra-")
                      ESCREVAL
                      ESCREVAL
                      ent_cord_p1()
@@ -2437,12 +2437,12 @@ INICIO
                         campo_p2()
                         ESCREVAL
                         ESCREVAL
-                        ESCREVAL ("      ",player2,", dê as coordenadas das posições dos barcos SS America (x3) (Com 3 posições)...")
+                        ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos SS America (x3) (Com 3 posiÃ§Ãµes)...")
                         ESCREVAL
                         ESCREVAL
                         ESCREVAL (line_full)
                         ESCREVAL
-                        ESCREVAL ("                                           -Erro: você já posicionOU um barco em algumas das posições, tente novamente-")
+                        ESCREVAL ("                                           -Erro: vocÃª jÃ¡ posicionOU um barco em algumas das posiÃ§Ãµes, tente novamente-")
                         ESCREVAL
                         ESCREVAL
                         ent_cord_p2()
@@ -2474,12 +2474,12 @@ INICIO
                            campo_p2()
                            ESCREVAL
                            ESCREVAL
-                           ESCREVAL ("      ",player2,", dê as coordenadas das posições dos barcos SS America (x3) (Com 3 posições)...")
+                           ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos SS America (x3) (Com 3 posiÃ§Ãµes)...")
                            ESCREVAL
                            ESCREVAL
                            ESCREVAL (line_full)
                            ESCREVAL
-                           ESCREVAL ("                                           -Erro: você já posicionOU um barco em algumas das posições, tente novamente-")
+                           ESCREVAL ("                                           -Erro: vocÃª jÃ¡ posicionOU um barco em algumas das posiÃ§Ãµes, tente novamente-")
                            ESCREVAL
                            ESCREVAL
                            ent_cord_p2()
@@ -2519,7 +2519,7 @@ INICIO
                campo_p2()
                ESCREVAL
                ESCREVAL
-               ESCREVAL ("      ",player2,", dê as coordenadas das posições dos barcos Dimitrius (x4) (Com 1 posição)...")
+               ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos Dimitrius (x4) (Com 1 posiÃ§Ã£o)...")
                ESCREVAL
                ESCREVAL
                ESCREVAL (line_full)
@@ -2535,12 +2535,12 @@ INICIO
                      campo_p2()
                      ESCREVAL
                      ESCREVAL
-                     ESCREVAL ("      ",player2,", dê as coordenadas das posições dos barcos Dimitrius (x4) (Com 1 posição)...")
+                     ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos Dimitrius (x4) (Com 1 posiÃ§Ã£o)...")
                      ESCREVAL
                      ESCREVAL
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                                         -Erro: você posicionOU um barco fora da arena, tente novamente-")
+                     ESCREVAL ("                                                         -Erro: vocÃª posicionOU um barco fora da arena, tente novamente-")
                      ESCREVAL
                      ESCREVAL
                      ent_cord2_p1()
@@ -2553,12 +2553,12 @@ INICIO
                      campo_p2()
                      ESCREVAL
                      ESCREVAL
-                     ESCREVAL ("      ",player2,", dê as coordenadas das posições dos barcos Dimitrius (x4) (Com 1 posição)...")
+                     ESCREVAL ("      ",player2,", dÃª as coordenadas das posiÃ§Ãµes dos barcos Dimitrius (x4) (Com 1 posiÃ§Ã£o)...")
                      ESCREVAL
                      ESCREVAL
                      ESCREVAL (line_full)
                      ESCREVAL
-                     ESCREVAL ("                                                         -Erro: você já posicionou um barco nessa posição, tente OUtra-")
+                     ESCREVAL ("                                                         -Erro: vocÃª jÃ¡ posicionou um barco nessa posiÃ§Ã£o, tente OUtra-")
                      ESCREVAL
                      ESCREVAL
                      ent_cord2_p2()
@@ -2599,7 +2599,7 @@ INICIO
                   campo_tiro_p1()
                   ESCREVAL
                   ESCREVAL
-                  ESCREVAL ("      ",player1,". É a hora de atacar!")
+                  ESCREVAL ("      ",player1,". Ã‰ a hora de atacar!")
                   ESCREVAL
                   ESCREVAL
                   ESCREVAL (line_full)
@@ -2628,7 +2628,7 @@ INICIO
                            campo_tiro_p1()
                            ESCREVAL
                            ESCREVAL
-                           ESCREVAL ("      ",player1,", você atirou pra fora da arena, tente novamente.")
+                           ESCREVAL ("      ",player1,", vocÃª atirou pra fora da arena, tente novamente.")
                            ESCREVAL
                            ESCREVAL
                            ESCREVAL (line_full)
@@ -2647,7 +2647,7 @@ INICIO
                               campo_tiro_p1()
                               ESCREVAL
                               ESCREVAL
-                              ESCREVAL ("      ",player1,", você já atirou nesta posição, tente OUtra.")
+                              ESCREVAL ("      ",player1,", vocÃª jÃ¡ atirou nesta posiÃ§Ã£o, tente OUtra.")
                               ESCREVAL
                               ESCREVAL
                               ESCREVAL (line_full)
@@ -2663,7 +2663,7 @@ INICIO
                                     campo_tiro_p1()
                                     ESCREVAL
                                     ESCREVAL
-                                    ESCREVAL ("      ",player1,", você atirou pra fora da arena, tente novamente.")
+                                    ESCREVAL ("      ",player1,", vocÃª atirou pra fora da arena, tente novamente.")
                                     ESCREVAL
                                     ESCREVAL
                                     ESCREVAL (line_full)
@@ -2696,7 +2696,7 @@ INICIO
                               campo_tiro_p1()
                               ESCREVAL
                               ESCREVAL
-                              ESCREVAL ("      ",player1,", você já atirOU nesta posição, tente OUtra.")
+                              ESCREVAL ("      ",player1,", vocÃª jÃ¡ atirOU nesta posiÃ§Ã£o, tente OUtra.")
                               ESCREVAL
                               ESCREVAL
                               ESCREVAL (line_full)
@@ -2712,7 +2712,7 @@ INICIO
                                     campo_tiro_p1()
                                     ESCREVAL
                                     ESCREVAL
-                                    ESCREVAL ("      ",player1,", você atirOU pra fora da arena, tente novamente.")
+                                    ESCREVAL ("      ",player1,", vocÃª atirOU pra fora da arena, tente novamente.")
                                     ESCREVAL
                                     ESCREVAL
                                     ESCREVAL (line_full)
@@ -2759,7 +2759,7 @@ INICIO
                   campo_tiro_p2()
                   ESCREVAL
                   ESCREVAL
-                  ESCREVAL ("      ",player2,", agora é a sua vez!")
+                  ESCREVAL ("      ",player2,", agora Ã© a sua vez!")
                   ESCREVAL
                   ESCREVAL
                   ESCREVAL (line_full)
@@ -2789,7 +2789,7 @@ INICIO
                            campo_tiro_p2()
                            ESCREVAL
                            ESCREVAL
-                           ESCREVAL ("      ",player2,", você atirou pra fora da arena, tente novamente.")
+                           ESCREVAL ("      ",player2,", vocÃª atirou pra fora da arena, tente novamente.")
                            ESCREVAL
                            ESCREVAL
                            ESCREVAL (line_full)
@@ -2808,7 +2808,7 @@ INICIO
                               campo_tiro_p2()
                               ESCREVAL
                               ESCREVAL
-                              ESCREVAL ("      ",player2,", você já atirOU nessa posição, tente OUtra.")
+                              ESCREVAL ("      ",player2,", vocÃª jÃ¡ atirOU nessa posiÃ§Ã£o, tente OUtra.")
                               ESCREVAL
                               ESCREVAL
                               ESCREVAL (line_full)
@@ -2824,7 +2824,7 @@ INICIO
                                     campo_tiro_p2()
                                     ESCREVAL
                                     ESCREVAL
-                                    ESCREVAL ("      ",player2,", você atirOU pra fora da arena, tente novamente.")
+                                    ESCREVAL ("      ",player2,", vocÃª atirOU pra fora da arena, tente novamente.")
                                     ESCREVAL
                                     ESCREVAL
                                     ESCREVAL (line_full)
@@ -2857,7 +2857,7 @@ INICIO
                               campo_tiro_p2()
                               ESCREVAL
                               ESCREVAL
-                              ESCREVAL ("      ",player2,", você já atirOU nesta posição, tente OUtra.")
+                              ESCREVAL ("      ",player2,", vocÃª jÃ¡ atirOU nesta posiÃ§Ã£o, tente OUtra.")
                               ESCREVAL
                               ESCREVAL
                               ESCREVAL (line_full)
@@ -2873,7 +2873,7 @@ INICIO
                                     campo_tiro_p2()
                                     ESCREVAL
                                     ESCREVAL
-                                    ESCREVAL (" ",player2,", você atirOU pra fora da arena, tente novamente.")
+                                    ESCREVAL (" ",player2,", vocÃª atirOU pra fora da arena, tente novamente.")
                                     ESCREVAL
                                     ESCREVAL
                                     ESCREVAL (line_full)
@@ -2933,7 +2933,7 @@ INICIO
             novamente <- "z"
             SE (pontos_p1 > pontos_p2) ENTAO
                ENQUANTO (novamente <> "s") E (novamente <> "n") FACA
-                  ESCREVAL (" ",player1," venceu. Parabéns!")
+                  ESCREVAL (" ",player1," venceu. ParabÃ©ns!")
                   ESCREVAL (line_none)
                   ESCREVAL (line_none)
                   ESCREVAL ("                       Desejam jogar novamente? <s/n>")
@@ -2944,7 +2944,7 @@ INICIO
             SENAO
                SE (pontos_p1 = pontos_p2) ENTAO
                   ENQUANTO (novamente <> "s") E (novamente <> "n") FACA
-                     ESCREVAL (" Empate. Parabéns a ambos!")
+                     ESCREVAL (" Empate. ParabÃ©ns a ambos!")
                      ESCREVAL (line_none)
                      ESCREVAL (line_none)
                      ESCREVAL ("                       Desejam jogar novamente? <s/n>")
@@ -2954,7 +2954,7 @@ INICIO
                   FIMENQUANTO
                SENAO
                   ENQUANTO (novamente <> "s") E (novamente <> "n") FACA
-                     ESCREVAL (" ",player2," venceu. Parabéns!")
+                     ESCREVAL (" ",player2," venceu. ParabÃ©ns!")
                      ESCREVAL (line_none)
                      ESCREVAL (line_none)
                      ESCREVAL ("                       Desejam jogar novamente? <s/n>")

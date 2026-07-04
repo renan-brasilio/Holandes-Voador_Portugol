@@ -31,6 +31,17 @@ O jogo foi apresentado como TRM (Trabalho de Representação Mensal) do 1º Per�
 
 ## Este jogo funciona com [Visualg3.0](http://visualg3.com.br/), baixe a última versão do jogo [aqui](https://github.com/renanfamous/Holandes-Voador_Portugol/releases).
 
+## Como Executar no macOS (Mac)
+
+Para rodar este jogo escrito em Portugol/VisuAlg no Mac:
+1. Certifique-se de que o **Node.js** (v16 ou superior) está instalado.
+2. Na raiz do repositório, execute:
+   ```bash
+   node run.js
+   ```
+O script pré-processará o arquivo para garantir compatibilidade sintática e invocará o motor do **Delégua** para iniciar o jogo.
+
+
 ### Vídeo do jogo
 ><a href="http://www.youtube.com/watch?feature=player_embedded&v=yhL-HBzAtNQ
 " target="_blank"><img src="http://img.youtube.com/vi/yhL-HBzAtNQ/0.jpg" 

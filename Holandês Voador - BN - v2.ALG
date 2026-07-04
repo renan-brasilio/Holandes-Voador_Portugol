@@ -1,14 +1,14 @@
-algoritmo "Hol�ndes Voador - BN v2"
+algoritmo "Holandês Voador - BN v2"
 
-// Disciplina     : [L�gica de Programa��o e Algor�tmos]
+// Disciplina     : [Lógica de Programação e Algoritmos]
 // Professor      : Edson Pedro Ferlin
-// Fun��o         : Simula um jogo de Batalha Naval
+// Função         : Simula um jogo de Batalha Naval
 // Autor        : Renan Rocha
-// Data de in�nio : 01/04/2017
-// Data de t�rmino: 26/06/2017
+// Data de início : 01/04/2017
+// Data de término: 26/06/2017
 
 //------------------------------------------------------------------
-//                         VARI�VEIS
+//                         VARIÁVEIS
 //------------------------------------------------------------------
 
 var
@@ -21,11 +21,11 @@ var
    pontos_p1, pontos_p2: real
    // Caracteres
    barcos_ref, resp, enter, line_none, line_full, topo, player1, player2, novamente, auto: caractere
-   // Mensagens com repeti��o
+   // Mensagens com repetição
    line: vetor [0..20] de caractere
 
    //------------------------------------------------------------------
-   //                      Fim (VARI�VEIS)
+   //                      Fim (VARIÁVEIS)
    //------------------------------------------------------------------
 
 
@@ -68,7 +68,7 @@ FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
 //- Procedimento contendo os dois campos com a seta indicativa para
-//------------- o 2� jogador (cordenadas) --------------------------
+//------------- o 2º jogador (cordenadas) --------------------------
 PROCEDIMENTO campo_p2()
 
 INICIO
@@ -88,7 +88,7 @@ FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
 //- Procedimento contendo os dois campos com a seta indicativa para
-//---------------- o 1� jogador (tiro) -----------------------------
+//---------------- o 1º jogador (tiro) -----------------------------
 PROCEDIMENTO campo_tiro_p1()
 
 INICIO
@@ -108,7 +108,7 @@ FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
 //- Procedimento contendo os dois campos com a seta indicativa para
-//---------------- o 2� jogador (tiro) -----------------------------
+//---------------- o 2º jogador (tiro) -----------------------------
 PROCEDIMENTO campo_tiro_p2()
 
 INICIO
@@ -127,7 +127,7 @@ INICIO
 FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
-//-- Procedimento contendo a entrada de cordenadas do 1� jogador ---
+//-- Procedimento contendo a entrada de cordenadas do 1º jogador ---
 PROCEDIMENTO ent_cord_p1()
 INICIO
    // Entrada de posicionamento
@@ -152,7 +152,7 @@ INICIO
          ESCREVA  (line[0])
          LEIA (dir)
       ATE (dir = 1) OU (dir = 2)
-   FIMSE // Fim da verifica��o
+   FIMSE // Fim da verificação
 
    // Entrada de linha
    ESCREVA (line[1])
@@ -212,7 +212,7 @@ INICIO
 FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
-//-- Procedimento de barcos com somente uma posi��o, 1� jogador ----
+//-- Procedimento de barcos com somente uma posição, 1º jogador ----
 PROCEDIMENTO ent_cord2_p1()
 INICIO
 
@@ -270,7 +270,7 @@ INICIO
 FIMPROCEDIMENTO
 //------------------------ Fim -------------------------------------
 
-//-- Procedimento de barcos com somente uma posi��o, 1� jogador ----
+//-- Procedimento de barcos com somente uma posição, 1º jogador ----
 PROCEDIMENTO ent_cord3_p1()
 INICIO
 
@@ -332,7 +332,7 @@ FIMPROCEDIMENTO
 
 PROCEDIMENTO ent_cord_p2()
 INICIO
-   // 2.1.Entrada das coordenadas de posicionamento do 1� jogador
+   // 2.1.Entrada das coordenadas de posicionamento do 1º jogador
    ESCREVA  (line[0])
    LEIA (dir)
    // 2.2.Verifica SE 1 OU 2 foram digitados
@@ -356,7 +356,7 @@ INICIO
       ATE (dir = 1) OU (dir = 2)
    FIMSE // 2.2.Fim
 
-   // 2.3.Entrada das coordenadas DE linha do 1� jogador
+   // 2.3.Entrada das coordenadas DE linha do 1º jogador
    ESCREVA (line[1])
    LEIA (linha)
 
@@ -383,7 +383,7 @@ INICIO
       ATE ((linha >= 1) E (linha < 11)) OU (linha <> 0)
    FIMSE // 2.4.Fim
 
-   // 2.5.Entrada das coordenadas DE coluna do 1� jogador
+   // 2.5.Entrada das coordenadas DE coluna do 1º jogador
    ESCREVA (line[2])
    LEIA (coluna)
 
@@ -413,11 +413,11 @@ INICIO
    FIMSE // 2.6.Fim
 FIMPROCEDIMENTO
 
-// 3.PROCEDIMENTO Barcos com somente uma posi��o, 1� jogador
+// 3.PROCEDIMENTO Barcos com somente uma posição, 1º jogador
 PROCEDIMENTO ent_cord2_p2()
 INICIO
 
-   // 3.1.Entrada das coordenadas de linha do 1� jogador
+   // 3.1.Entrada das coordenadas de linha do 1º jogador
    ESCREVA (line[1])
    LEIA (linha)
 
@@ -443,7 +443,7 @@ INICIO
       ATE ((linha >= 1) E (linha < 11)) OU (linha <> 0)
    FIMSE // 3.2.Fim
 
-   // 3.3.Entrada das coordenadas DE coluna do 1� jogador
+   // 3.3.Entrada das coordenadas DE coluna do 1º jogador
    ESCREVA (line[2])
    LEIA (coluna)
 
@@ -476,7 +476,7 @@ FIMPROCEDIMENTO
 PROCEDIMENTO ent_cord3_p2()
 INICIO
 
-   // 3.1.Entrada das coordenadas de linha do 1� jogador
+   // 3.1.Entrada das coordenadas de linha do 1º jogador
    ESCREVA (line[1])
    LEIA (tiro_linha)
 
@@ -502,7 +502,7 @@ INICIO
       ATE ((tiro_linha >= 1) E (tiro_linha < 11)) OU (tiro_linha <> 0)
    FIMSE // 3.2.Fim
 
-   // 3.3.Entrada das coordenadas DE coluna do 1� jogador
+   // 3.3.Entrada das coordenadas DE coluna do 1º jogador
    ESCREVA (line[2])
    LEIA (tiro_coluna)
 
@@ -530,7 +530,7 @@ INICIO
    FIMSE // 3.4.Fim
 FIMPROCEDIMENTO
 
-// 4.Tela com informa��es DE Tutorial
+// 4.Tela com informações DE Tutorial
 PROCEDIMENTO tutorial()
 
 INICIO
@@ -543,16 +543,16 @@ INICIO
    ESCREVAL("                                          TUTORIAL                                                \/              __'__     __'__      __'__        _  _")
    ESCREVAL("                                                                                                                 /    /    /    /     /    /       ' \/ '")
    ESCREVAL("                                                                                                                /\____\    \____\     \____\")
-   ESCREVAL("          Holand�s Voador � um jogo DE Batalha Naval e lhe colocar� em uma guerra em                           / ___!___   ___!___    ___!___")
-   ESCREVAL("          que cada jogador ter� seus barcos pirata. O objetivo � destruir os piratas                          / (      (  (      (   (      (")
-   ESCREVAL("          inimigos e garantir seu tesouro! Mas antes disso, � preciso encontr�-los.                        / /   \______\  \______\   \______\")
-   ESCREVAL("          Ganhar� quem destruir todos os barcos piratas inimigos primeiro. No in�cio                     /  /   ____!_____ ___!______ ____!_____        _  _")
-   ESCREVAL("          do jogo � necess�rio alocar os 10 barcos, com diferentes tamanhos e bolar                    /   /   /          /          /         /         \/")
-   ESCREVAL("          uma estrat�gia, lembre-se bem das posi��es pois ap�s voc� terminar, ser� a                 /    /    |         ||         ||         |")
-   ESCREVAL("          vez de seu advers�rio. Ap�s os barcos alocados, ser� a hora da batalha, ca-              /_____/     \         \\         \\         \")
-   ESCREVAL("          da um ter� uma chance, se acertar pode continuar, se errar � a vez do ad-                      \      \_________\\_________\\_________\")
-   ESCREVAL("          vers�rio. Os barcos s�o representados com #, ao acert�-lo, o mesmo ficar�                       \         |          |         |")
-   ESCREVAL("          com um 'X' no local DE acerto. Crie sua estrat�gia e parta para a batalha!                       \________!__________!_________!_________/")
+   ESCREVAL("          Holandês Voador é um jogo DE Batalha Naval e lhe colocará em uma guerra em                           / ___!___   ___!___    ___!___")
+   ESCREVAL("          que cada jogador terá seus barcos pirata. O objetivo é destruir os piratas                          / (      (  (      (   (      (")
+   ESCREVAL("          inimigos e garantir seu tesouro! Mas antes disso, é preciso encontrá-los.                        / /   \______\  \______\   \______\")
+   ESCREVAL("          Ganhará quem destruir todos os barcos piratas inimigos primeiro. No início                     /  /   ____!_____ ___!______ ____!_____        _  _")
+   ESCREVAL("          do jogo é necessário alocar os 10 barcos, com diferentes tamanhos e bolar                    /   /   /          /          /         /         \/")
+   ESCREVAL("          uma estratégia, lembre-se bem das posições pois após você terminar, será a                 /    /    |         ||         ||         |")
+   ESCREVAL("          vez de seu adversário. Após os barcos alocados, será a hora da batalha, ca-              /_____/     \         \\         \\         \")
+   ESCREVAL("          da um terá uma chance, se acertar pode continuar, se errar é a vez do ad-                      \      \_________\\_________\\_________\")
+   ESCREVAL("          versário. Os barcos são representados com #, ao acertá-lo, o mesmo ficará                       \         |          |         |")
+   ESCREVAL("          com um 'X' no local DE acerto. Crie sua estratégia e parta para a batalha!                       \________!__________!_________!_________/")
    ESCREVAL("                                                                                                            \|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|/ ")
    ESCREVAL("                                                                                                             \        o       o        o         /  ")
    ESCREVAL("                                    Divirta-se e bom jogo!                                      ~~~~~~~~~~~~~~\_________________________________/~~~~~~~~~~~~~")
@@ -664,29 +664,29 @@ FIMPROCEDIMENTO
 INICIO
 
    // ------------------------------------------------------------------
-   //                          In�cio do Jogo
+   //                          Início do Jogo
    // ------------------------------------------------------------------
 
-   // 5.Linha completa PARA dar formato ao cabe�alho E rodap�s das telas
+   // 5.Linha completa PARA dar formato ao cabeçalho E rodapós das telas
    line[0] <- "             Posicionamento (1 = Horizontal | 2 = Vertical): "
    line[1] <- "             Linha: "
    line[2] <- "             Coluna: "
    line[3] <- "                                                           -Erro: Digite 1 ou 2 para o posicionamento!-"
-   line[4] <- "                                                           -Erro: Digite o n�mero da Linha de 1 a 10!-"
-   line[5] <- "                                                           -Erro: Digite o n�mero da Coluna de 1 a 10!-"
+   line[4] <- "                                                           -Erro: Digite o número da Linha de 1 a 10!-"
+   line[5] <- "                                                           -Erro: Digite o número da Coluna de 1 a 10!-"
    line[6] <- "       Entre com o nome do primeiro jogador e aperte Enter: "
    line[7] <- "       Entre com o nome do segundo jogador e aperte Enter: "
-   line[8] <- "                                                        -Erro: Voc� n�o digitou o nome do primeiro jogador!-"
-   line[9] <- "                                                         -Erro: Voc� n�o digitou o nome do segundo jogador!-"
+   line[8] <- "                                                        -Erro: Você não digitou o nome do primeiro jogador!-"
+   line[9] <- "                                                         -Erro: Você não digitou o nome do segundo jogador!-"
    line[10] <- "                                                                          Pressione Enter!"
    line[11] <- "                                                         -Erro: Digite um nome diferente do primeiro jogador!-"
    line[12] <- "                                                                 *Digite as coordenadas e aperte Enter!*"
-   line[13] <- "                                                      -Erro: voc� posicionou o barco fora da arena, tente novamente-"
-   line[14] <- "                                                      -Erro: voc� j� posicionou um barco nessa posi��o, tente outra-"
-   line[15] <- "                                               -Erro: voc� j� posicionou um barco em algumas das posi��es, tente novamente-"
-   line[16] <- "                                                           -Erro: voc� atirou fora da arena, tente novamente-"
-   line[17] <- "                                                           -Erro: voc� j� atirou nessa posi��o, tente outra-"
-   line_full <- "      _________________________________________________________________________________________________________________________________________________________")
+   line[13] <- "                                                      -Erro: você posicionou o barco fora da arena, tente novamente-"
+   line[14] <- "                                                      -Erro: você já posicionou um barco nessa posição, tente outra-"
+   line[15] <- "                                               -Erro: você já posicionou um barco em algumas das posições, tente novamente-"
+   line[16] <- "                                                           -Erro: você atirou fora da arena, tente novamente-"
+   line[17] <- "                                                           -Erro: você já atirou nessa posição, tente outra-"
+   line_full <- "      _________________________________________________________________________________________________________________________________________________________"
 
    ESCREVAL (line_full)
    ESCREVAL
@@ -723,11 +723,11 @@ INICIO
    LIMPATELA
    // -----------
 
-   // 7.Declara��o do topo que SEr� utilizado nas telas
-   topo <- "                                                                           O Holand�s Voador"
+   // 7.Declaração do topo que será utilizado nas telas
+   topo <- "                                                                           O Holandês Voador"
 
-   // 8.Verifica se o jogador quer ver as instru��es antes DE jogar
-   ENQUANTO ((resp <> "s") OU (resp <> "S")) E ((resp <> "n") OU (resp <> "N")) FACA
+   // 8.Verifica se o jogador quer ver as instruções antes DE jogar
+   ENQUANTO (resp <> "s") E (resp <> "S") E (resp <> "n") E (resp <> "N") FACA
       LIMPATELA
       ESCREVAL (line_full)
       ESCREVAL
@@ -757,13 +757,13 @@ INICIO
       ESCREVAL
       ESCREVAL (line_full)
       ESCREVAL
-      ESCREVAL("                                                             Gostaria de ver as instru��es antes de iniciar?")
+      ESCREVAL("                                                             Gostaria de ver as instruções antes de iniciar?")
       ESCREVAL("                                                                                  <S/N>")
       LEIA (resp)
       LIMPATELA
    FIMENQUANTO // 8.Fim
 
-   // 9.Mostra o tutorial caso o jogador queira v�-lo E coleta o nome dos jogadores
+   // 9.Mostra o tutorial caso o jogador queira vê-lo E coleta o nome dos jogadores
    SE (resp = "s") OU (resp = "S") ENTAO
       ESCREVAL (line_full)
       tutorial()
@@ -773,7 +773,7 @@ INICIO
       ESCREVA (line[6])
       LEIA (player1)
 
-      // 9.1.Verifica se o nome n�o est� vazio
+      // 9.1.Verifica se o nome não está vazio
       SE (player1 = "") ENTAO
          REPITA
             LIMPATELA
@@ -923,19 +923,19 @@ INICIO
          FIMPARA
       FIMPARA
 
-      // In�nio do jogo
+      // Início do jogo
       // Player 1
       LIMPATELA
       ESCREVAL (line_full)
       campo_p1()
       ESCREVAL
       ESCREVAL
-      ESCREVAL ("       ",player1,", � chegado o momento...")
+      ESCREVAL ("       ",player1,", é chegado o momento...")
       ESCREVAL
       ESCREVAL
       ESCREVAL (line_full)
       ESCREVAL
-      ESCREVAL("                                                              Para come�ar a batalha, pressione Enter!")
+      ESCREVAL("                                                              Para começar a batalha, pressione Enter!")
       ESCREVAL
       LEIA (enter)
 
@@ -943,7 +943,7 @@ INICIO
       // Barco Octavius
       // PARA que define a quantidade DE barcos
       PARA i DE 1 ATE 1 FACA
-         barcos_ref <- ", d� as coordenadas das posi��es do barco Octavius (Com 6 posi��es)..."
+         barcos_ref <- ", dê as coordenadas das posições do barco Octavius (Com 6 posições)..."
 
          LIMPATELA
          ESCREVAL (line_full)
@@ -1032,7 +1032,7 @@ INICIO
 
       // Barco World Discoverer
       PARA i DE 1 ATE 1 FACA
-         barcos_ref <- ", d� as coordenadas das posi��es do barco World Discoverer (Com 5 posi��es)..."
+         barcos_ref <- ", dê as coordenadas das posições do barco World Discoverer (Com 5 posições)..."
          LIMPATELA
          ESCREVAL (line_full)
          campo_p1()
@@ -1179,7 +1179,7 @@ INICIO
 
       // Barco SS America
       PARA i DE 1 ATE 1 FACA
-         barcos_ref <- ", d� as coordenadas das posi��es do barco SS America (Com 3 posi��es)..."
+         barcos_ref <- ", dê as coordenadas das posições do barco SS America (Com 3 posições)..."
          LIMPATELA
          ESCREVAL (line_full)
          campo_p1()
@@ -1326,7 +1326,7 @@ INICIO
 
       // Barcos Dimitrius (x2)
       PARA i DE 1 ATE 2 FACA
-         barcos_ref <- ", d� as coordenadas das posi��es dos barcos Dimitrius (x2) (Com 1 posi��o)..."
+         barcos_ref <- ", dê as coordenadas das posições dos barcos Dimitrius (x2) (Com 1 posição)..."
          LIMPATELA
          ESCREVAL (line_full)
          campo_p1()
@@ -1399,16 +1399,16 @@ INICIO
       // Fim player 1
 
       //##########################################################
-      //         Fim do setamento do 1� jogador
+      //         Fim do setamento do 1º jogador
       //##########################################################
 
-      // In�cio jogada Player 2
+      // Início jogada Player 2
       LIMPATELA
       ESCREVAL (line_full)
       campo_p2()
       ESCREVAL
       ESCREVAL
-      ESCREVAL ("       ",player2,", � chegado o momento...")
+      ESCREVAL ("       ",player2,", é chegado o momento...")
       ESCREVAL
       ESCREVAL
       ESCREVAL (line_full)
@@ -1421,7 +1421,7 @@ INICIO
       // Barco Octavius
       // PARA que define a quantidade DE barcos
       PARA i DE 1 ATE 1 FACA
-         barcos_ref <- ", d� as coordenadas das posi��es do barco Octavius (Com 6 posi��es)..."
+         barcos_ref <- ", dê as coordenadas das posições do barco Octavius (Com 6 posições)..."
          LIMPATELA
          ESCREVAL (line_full)
          campo_p2()
@@ -1510,7 +1510,7 @@ INICIO
 
       // Barcos World Discoverer (x2)
       PARA i DE 1 ATE 1 FACA
-         barcos_ref <- ", d� as coordenadas das posi��es do barco World Discoverer (Com 5 posi��es)..."
+         barcos_ref <- ", dê as coordenadas das posições do barco World Discoverer (Com 5 posições)..."
          LIMPATELA
          ESCREVAL (line_full)
          campo_p2()
@@ -1659,7 +1659,7 @@ INICIO
 
       // Barco SS America
       PARA i DE 1 ATE 3 FACA
-         barcos_ref <- ", d� as coordenadas das posi��es do barco SS America (Com 3 posi��es)..."
+         barcos_ref <- ", dê as coordenadas das posições do barco SS America (Com 3 posições)..."
          LIMPATELA
          ESCREVAL (line_full)
          campo_p2()
@@ -1808,7 +1808,7 @@ INICIO
 
       // Barcos Dimitrius (x4)
       PARA i DE 1 ATE 2 FACA
-         barcos_ref <- ", d� as coordenadas das posi��es dos barcos Dimitrius (x2) (Com 1 posi��o)..."
+         barcos_ref <- ", dê as coordenadas das posições dos barcos Dimitrius (x2) (Com 1 posição)..."
          LIMPATELA
          ESCREVAL (line_full)
          campo_p2()
@@ -1894,7 +1894,7 @@ INICIO
             campo_tiro_p1()
             ESCREVAL
             ESCREVAL
-            ESCREVAL ("      ",player1,". � a hora de atacar!")
+            ESCREVAL ("      ",player1,". é a hora de atacar!")
             ESCREVAL
             ESCREVAL
             ESCREVAL (line_full)
@@ -2048,7 +2048,7 @@ INICIO
             campo_tiro_p2()
             ESCREVAL
             ESCREVAL
-            ESCREVAL ("      ",player2,", agora � a sua vez!")
+            ESCREVAL ("      ",player2,", agora é a sua vez!")
             ESCREVAL
             ESCREVAL
             ESCREVAL (line_full)
@@ -2218,7 +2218,7 @@ INICIO
       novamente <- "z"
       SE (pontos_p1 > pontos_p2) ENTAO
          ENQUANTO (novamente <> "s") E (novamente <> "n") FACA
-            ESCREVAL ("      ",player1," venceu. Parab�ns!")
+            ESCREVAL ("      ",player1," venceu. Parabéns!")
             ESCREVAL (line_none)
             ESCREVAL (line_none)
             ESCREVAL ("                       Desejam jogar novamente? <s/n>")
@@ -2229,7 +2229,7 @@ INICIO
       SENAO
          SE (pontos_p1 = pontos_p2) ENTAO
             ENQUANTO (novamente <> "s") E (novamente <> "n") FACA
-               ESCREVAL ("      Empate. Parab�ns a ambos!")
+               ESCREVAL ("      Empate. Parabéns a ambos!")
                ESCREVAL (line_none)
                ESCREVAL (line_none)
                ESCREVAL ("                       Desejam jogar novamente? <s/n>")
@@ -2240,12 +2240,12 @@ INICIO
             FIMENQUANTO
          SENAO
             ENQUANTO (novamente <> "s") E (novamente <> "n") FACA
-               ESCREVAL ("      ",player2," venceu. Parab�ns!")
+               ESCREVAL ("      ",player2," venceu. Parabéns!")
                ESCREVAL (line_none)
                ESCREVAL (line_none)
                ESCREVAL ("                       Desejam jogar novamente? <s/n>")
                LEIA (novamente)
-               ESCREVAL (line_none)Z
+               ESCREVAL (line_none)
                ESCREVAL (line_full)
                LIMPATELA
             FIMENQUANTO

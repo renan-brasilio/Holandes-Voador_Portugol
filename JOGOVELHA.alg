@@ -1,5 +1,5 @@
 algoritmo "JogoVelha"
-// FunÁ„o : Jogo da Velha
+// Fun√ß√£o : Jogo da Velha
 // Autor : Andrey - andreywis@gmail.com
 // Data : 02/11/2009
 dos
@@ -72,7 +72,7 @@ var
       se (resultado = 1) entao
          numeros[12,1] <- "  ........   "
          numeros[12,2] <- "  ........   "
-         numeros[12,3] <- "   ......    O VENCEDOR …"
+         numeros[12,3] <- "   ......    O VENCEDOR √â"
          numeros[12,4] <- "     ..      "+jogador1
          numeros[12,5] <- "     ..      "
          numeros[12,6] <- "    ....     "
@@ -82,7 +82,7 @@ var
       se (resultado = 2) entao
          numeros[12,1] <- "  ........   "
          numeros[12,2] <- "  ........   "
-         numeros[12,3] <- "   ......    O VENCEDOR …"
+         numeros[12,3] <- "   ......    O VENCEDOR √â"
          numeros[12,4] <- "     ..      "+jogador2
          numeros[12,5] <- "     ..      "
          numeros[12,6] <- "    ....     "
@@ -102,7 +102,7 @@ var
       se (resultado = 0) entao
          numeros[12,1] <- "";
          numeros[12,2] <- "--------------------------";
-         numeros[12,3] <- "Agora È a sua vez de jogar ";
+         numeros[12,3] <- "Agora √© a sua vez de jogar ";
          numeros[12,4] <- nome_jogador;
          numeros[12,5] <- "--------------------------";
          numeros[12,6] <- "";
@@ -123,7 +123,7 @@ var
          senao
             aleatorio on
             aleatorio 1,9
-               //SÛ passa se for diferente de 5, que È o selecionado pelo jogaror 1
+               //S√≥ passa se for diferente de 5, que √© o selecionado pelo jogaror 1
                repita
                   leia(retorno)
                ate (retorno <> 5)
@@ -355,7 +355,7 @@ var
                fimse
             fimpara
          fimse
-         //PRA N√O TRAVAR
+         //PRA N√ÉO TRAVAR
          se (jogo[1,1] = 1) e (jogo[1,2] = 0) e (jogo[1,3] = 2) entao
             retorno <- 2
             setado <- verdadeiro
@@ -395,7 +395,7 @@ var
             retorno <- 9
             setado <- verdadeiro
          fimse
-         //PRA N√O PERDER
+         //PRA N√ÉO PERDER
          se (jogo[1,1] = 1) e (jogo[1,2] = 1) e (jogo[1,3] = 0) entao
             retorno <- 3
             setado <- verdadeiro
@@ -799,7 +799,7 @@ var
          fimse
    fimprocedimento
 
-   //VERIFICA SE AINDA N√O DEU VELHA E SE ALGU…M GANHOU
+   //VERIFICA SE AINDA N√ÉO DEU VELHA E SE ALGU√âM GANHOU
    funcao velha():logico
    var
       linha,coluna:inteiro
@@ -831,7 +831,7 @@ var
       retorne retorno
    fimfuncao
 
-   //FUN«√O QUE VERIFICA SE A JOGADA … V¡LIDA OU N√O
+   //FUN√á√ÉO QUE VERIFICA SE A JOGADA √â V√ÅLIDA OU N√ÉO
    funcao checa_jogada(num:inteiro):logico
    var
       retorno:logico
@@ -908,15 +908,15 @@ var
    fimfuncao
 
    inicio
-   //SETA OS N⁄MEROS INICIAIS PARA MOSTRAR NA TELA DO JOGO
+   //SETA OS N√öMEROS INICIAIS PARA MOSTRAR NA TELA DO JOGO
    numeros[1,1] <- "~~~~~|";
    numeros[1,2] <- "~~~22|";
-   numeros[1,3] <- "~~~22|";        ~~~~~~~~~~~~~~
-   numeros[1,4] <- "----- "         ~~~~~~~~~~~~~~
-   numeros[1,5] <- "~~~~~|";          22
-   numeros[1,6] <- "~~~22|"           22
-   numeros[2,1] <- "~~~22|";          22
-   numeros[2,2] <- "----- "           22
+   numeros[1,3] <- "~~~22|";        //~~~~~~~~~~~~~~
+   numeros[1,4] <- "----- "         //~~~~~~~~~~~~~~
+   numeros[1,5] <- "~~~~~|";          //22
+   numeros[1,6] <- "~~~22|"           //22
+   numeros[2,1] <- "~~~22|";          //22
+   numeros[2,2] <- "----- "           //22
    //numeros[1,3] <- "      11 11     ";
   // numeros[1,4] <- "         11     ";
   // numeros[1,5] <- "         11     ";
@@ -992,7 +992,7 @@ var
    escreva("\o/ Jogador 2 ('CPU' para jogar contra o computador): ")
    leia(jogador2)
 
-   //SETA OS BLOCOS COM OS N⁄MEROS INICIAIS
+   //SETA OS BLOCOS COM OS N√öMEROS INICIAIS
    seta_bloco(1,1)
    seta_bloco(2,2)
    seta_bloco(3,3)
@@ -1021,7 +1021,7 @@ var
 
    enquanto (CONTINUA = verdadeiro) faca
 
-      //VERIFICA SE AINDA N√O DEU VELHA
+      //VERIFICA SE AINDA N√ÉO DEU VELHA
       CONTINUA <- velha()
       se(CONTINUA = verdadeiro) entao
          //MONTA O JOGO NA TELA
@@ -1029,13 +1029,13 @@ var
          escreval(msg)
          escreva("Escolha o local da sua jogada: ")
 
-         //VERIFICA SE EST¡ JOGANDO CONTRA A CPU E FAZ A JOGADA
+         //VERIFICA SE EST√Å JOGANDO CONTRA A CPU E FAZ A JOGADA
          se (jogador2 = "CPU") e (turno = 2) entao
             jogada <- cpu_joga()
          senao
             leia(jogada)
          fimse
-         //VERIFICA SE … UMA JOGADA V¡LIDA
+         //VERIFICA SE √â UMA JOGADA V√ÅLIDA
          se (checa_jogada(jogada) = verdadeiro) entao
             seta_jogo(jogada)
             msg<-""
@@ -1055,7 +1055,7 @@ var
                seta_nome_jogada(jogador2)
             fimse
          senao
-            msg <- "VocÍ selecionou uma jogada inv·lida!"
+            msg <- "Voc√™ selecionou uma jogada inv√°lida!"
          fimse
 
       fimse
