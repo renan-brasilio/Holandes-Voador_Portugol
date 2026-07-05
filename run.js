@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
 
-const filename = process.argv[2] || 'Holandês Voador - BN - v2.ALG';
+const filename = process.argv[2] || 'Holandês Voador - BN - v3.ALG';
 const inputFile = path.resolve(__dirname, filename);
 const tempFile = path.resolve(__dirname, 'temp_run.alg');
 
@@ -32,7 +32,12 @@ const preprocessed = content
   .replace(pattern, (match, indent, keyword, comment) => {
     return `${indent}//${comment}\n${indent}${keyword}`;
   })
-  .replace(aleatorioPattern, '$1//$2');
+  .replace(aleatorioPattern, '$1//$2')
+  .replace(/\[W\]/g, '\x1b[94m')
+  .replace(/\[S\]/g, '\x1b[92m')
+  .replace(/\[H\]/g, '\x1b[91m')
+  .replace(/\[M\]/g, '\x1b[93m')
+  .replace(/\[R\]/g, '\x1b[0m');
 
 fs.writeFileSync(tempFile, preprocessed, 'utf8');
 
@@ -51,8 +56,10 @@ process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
 process.stdin.on('data', (key) => {
-  if (key === '\u001b' || key === '\u0003') { // Escape or Ctrl+C
-    console.log('\n[INFO] Jogo encerrado pelo usuário (tecla ESC pressionada).');
+  if (key === '\u001b') { // Escape
+    delegua.stdin.write("esc\n");
+  } else if (key === '\u0003') { // Ctrl+C
+    console.log('\n[INFO] Processo encerrado pelo usuário (Ctrl+C).');
     delegua.kill();
     cleanupAndExit(0);
   } else {
